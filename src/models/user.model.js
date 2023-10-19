@@ -30,7 +30,13 @@ const userSchema = new mongoose.Schema({
         type: String,
         enum: ['admin', 'usuario', 'premium'],
         default: 'usuario'
-    }
+    },
+    documents: [
+        {
+            name: String,
+            reference: String
+        }
+    ]
 });
 
 const User = mongoose.model('User', userSchema);
