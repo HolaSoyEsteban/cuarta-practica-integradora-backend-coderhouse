@@ -29,4 +29,10 @@ router.put('/premium/:uid', async (req, res) => {
     }
 });
 
+router.post('/:uid/documents', async (req, res) => {
+    const uid = req.params.uid;
+
+    
+})
+
 export default router;
