@@ -37,6 +37,11 @@ const userSchema = new mongoose.Schema({
             reference: String
         }
     ],
+    status: {
+        type: String,
+        enum: ['pending', 'active'],
+        default: 'pending'
+    },
     last_connection: {
         type: Date
     }
